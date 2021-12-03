@@ -1,0 +1,31 @@
+{
+  "name": "js-prototyping-boilerplate",
+  "private": true,
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/plugin-proposal-class-properties": "^7.12.13",
+    "@babel/plugin-transform-arrow-functions": "^7.12.13",
+    "@babel/preset-env": "^7.12.16",
+    "babel-loader": "^8.2.2",
+    "npm-run-all": "^4.1.5",
+    "serve": "^11.2.0",
+    "webpack": "^5.22.0",
+    "webpack-cli": "^4.5.0"
+  },
+  "dependencies": {
+    "@ircam/resume-audio-context": "^1.0.2",
+    "@ircam/simple-components": "^1.2.4",
+    "core-js": "^3.8.3",
+    "lit-html": "^2.0.2",
+    "npm": "^8.1.4",
+    "regenerator-runtime": "^0.13.7",
+    "waves-loaders": "^0.1.5",
+    "waves-masters": "^2.3.1"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "watch": "webpack --config webpack.config.js --watch",
+    "dev": "npm-run-all --parallel start watch",
+    "start": "serve public"
+  }
+}
