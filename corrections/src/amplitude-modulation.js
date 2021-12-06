@@ -74,7 +74,7 @@ class AMSynth {
     const timeConstant = 0.001;
 
     this._tremolo.gain.setTargetAtTime(1 - this._depthValue / 2, startTime, timeConstant);
-    this._depth.gain.setTargetAtTime(this._depthValue / 2, startTime, timeConstant)
+    this._depth.gain.setTargetAtTime(this._depthValue / 2, startTime, timeConstant);
   }
 
   get depth() {

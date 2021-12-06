@@ -20,6 +20,7 @@ const globals = {
 class GranularEngine {
   constructor(audioContext) {
     this.audioContext = audioContext;
+    this.buffer = null;
     this.period = 0.05; // period of the grains
     this.duration = 0.2; // duration of the grains
     this._position = 0; // position in the buffer
@@ -29,14 +30,6 @@ class GranularEngine {
 
   connect(output) {
     this.output.connect(output);
-  }
-
-  set buffer(value) {
-    this._buffer = value;
-  }
-
-  get buffer() {
-    return this._buffer;
   }
 
   set position(value) {
