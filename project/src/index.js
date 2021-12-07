@@ -39,19 +39,19 @@ const HOP_SIZE = 512;
 // if the last block is < blockSize, just ignore it
 // @param {Float32Array} channelData - PCM data from the AudioBuffer (assume mono)
 // @param {Number} sampleRate - sample rate of the given audio data
-// @param {Number} blockSize - Size of the block to perform the analysis (in sample)
-// @param {Number} hopSize - Size of hop between two consecutive blocks
+// @param {Number} blockSize - Size of the block to perform the analysis (in samples)
+// @param {Number} hopSize - Size of hop between two consecutive blocks (in samples)
 // @return {Array}
 function getTimes(channelData, sampleRate, blockSize, hopSize) {
 
 }
 
-// returns an Array of zero-crossing values from the given audio signal
+// returns an Array of RMS values from the given audio signal
 // if the last block is < blockSize, just ignore it
 // @param {Float32Array} channelData - PCM data from the AudioBuffer (assume mono)
 // @param {Number} sampleRate - sample rate of the given audio data
-// @param {Number} blockSize - Size of the block to perform the analysis (in sample)
-// @param {Number} hopSize - Size of hop between two consecutive blocks
+// @param {Number} blockSize - Size of the block to perform the analysis (in samples)
+// @param {Number} hopSize - Size of hop between two consecutive blocks (in samples)
 // @return {Array}
 function rms(channelData, sampleRate, blockSize, hopSize) {
 
@@ -62,8 +62,8 @@ function rms(channelData, sampleRate, blockSize, hopSize) {
 // if the last block is < blockSize, just ignore it
 // @param {Float32Array} channelData - PCM data from the AudioBuffer (assume mono)
 // @param {Number} sampleRate - sample rate of the given audio data
-// @param {Number} blockSize - Size of the block to perform the analysis (in sample)
-// @param {Number} hopSize - Size of hop between two consecutive blocks
+// @param {Number} blockSize - Size of the block to perform the analysis (in samples)
+// @param {Number} hopSize - Size of hop between two consecutive blocks (in samples)
 // @return {Array}
 function zeroCrossing(channelData, sampleRate, blockSize, hopSize) {
 
@@ -76,6 +76,10 @@ function normalize(data) {
 
 }
 
+// find the time of the closest match in data according to current mouse position
+// on the interface, using euclidian distance.
+// @param {Object} guiPosition - current position in the interface
+// @param {Object} data - global data object containing the times and descriptors
 function findStartTimeFromGuiPosition(guiPosition, data) {
 
 }
