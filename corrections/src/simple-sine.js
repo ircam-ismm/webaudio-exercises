@@ -16,7 +16,7 @@ const audioContext = new AudioContext();
 
   // create an oscillator
   const sine = audioContext.createOscillator();
-  // pipe it to the destination (i.e. dac)
+  // pipe its output signal to the audio context destination (i.e. dac~)
   sine.connect(audioContext.destination);
   // start the oscillator now
   sine.start();
