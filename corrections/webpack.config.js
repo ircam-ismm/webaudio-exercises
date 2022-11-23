@@ -3,6 +3,7 @@ const path = require('path');
 module.exports = {
   entry: {
     'index': './src/index.js',
+    'simple-sine': './src/simple-sine.js',
     'playing-audio-buffers': './src/playing-audio-buffers.js',
     'feedback-delay': './src/feedback-delay.js',
     'amplitude-modulation': './src/amplitude-modulation.js',
