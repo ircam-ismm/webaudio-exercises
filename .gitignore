@@ -5,3 +5,21 @@ public/.bundle*
 ligeti-artikulation.wav
 
 package-lock.json
+exercises/src/playing-audio-buffers.js
+exercises/src/index.js
+exercises/src/feedback-delay.js
+exercises/public/index.html
+exercises/public/build/scheduling.js
+exercises/public/build/playing-audio-buffers.js
+exercises/public/build/index.js
+exercises/public/build/granular-synthesis.js
+exercises/public/build/feedback-delay.js
+exercises/public/build/amplitude-modulation.js
+corrections/src/playing-audio-buffers.js
+corrections/public/build/simple-sine.js
+corrections/public/build/scheduling.js
+corrections/public/build/playing-audio-buffers.js
+corrections/public/build/index.js
+corrections/public/build/granular-synthesis.js
+corrections/public/build/feedback-delay.js
+corrections/public/build/amplitude-modulation.js
