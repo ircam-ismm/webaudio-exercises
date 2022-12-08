@@ -76,7 +76,8 @@ class DisplaySteps {
   // Q1 --------------------------------------------------------->
 
   for (let i = 0; i < soundfiles.length; i++) {
-    score[i] = new Array(numSteps).fill(0); // populate score
+    // populate score as score[track][beat]
+    score[i] = new Array(numSteps).fill(0);
 
     // Q2 --------------------------------------------------------->
 
